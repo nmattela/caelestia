@@ -1,10 +1,11 @@
-function fish_greeting
-    echo -ne '\x1b[38;5;16m'  # Set colour to primary
-    echo '     ______           __          __  _       '
-    echo '    / ____/___ ____  / /__  _____/ /_(_)___ _ '
-    echo '   / /   / __ `/ _ \/ / _ \/ ___/ __/ / __ `/ '
-    echo '  / /___/ /_/ /  __/ /  __(__  ) /_/ / /_/ /  '
-    echo '  \____/\__,_/\___/_/\___/____/\__/_/\__,_/   '
-    set_color normal
-    fastfetch --key-padding-left 5
+# Get terminal emulator
+set TERM_EMULATOR (ps -aux | grep (ps -p $fish_pid -o ppid=) | awk 'NR==1{print $11}')
+
+switch "$TERM_EMULATOR"
+case '*kitty*'
+    neofetch --backend 'kitty'
+case '*tmux*' '*login*' '*sshd*' '*konsole*'
+    neofetch --backend 'ascii' --ascii_distro 'arch_small' 
+case '*'
+    neofetch --backend 'w3m' --xoffset 34 --yoffset 34 --gap 0
 end
