@@ -9,5 +9,6 @@
 /fish/fish_variables
 
 /hypr/hyprland/monitors.conf
+/hypr/hyprland/nvidia.conf
 
 .SRCINFO
