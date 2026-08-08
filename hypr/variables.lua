@@ -6,7 +6,7 @@ return {
     ------------------
 
     -- Apps
-    terminal                   = "foot",
+    terminal                   = "kitty",
     browser                    = "firefox",
     editor                     = "codium",
     fileExplorer               = "thunar",
@@ -77,13 +77,15 @@ return {
     kbPrevWsGroup              = "CTRL + SUPER + mouse_up",
 
     -- Window Group
-    kbWindowCycleNext          = "ALT + TAB",
-    kbWindowCyclePrev          = "SHIFT + ALT + TAB",
-    kbWindowGroupCycleNext     = "CTRL + ALT + TAB",
-    kbWindowGroupCyclePrev     = "CTRL + SHIFT + ALT + TAB",
+    kbWindowCycleNext          = "SUPER + TAB",
+    kbWindowCyclePrev          = "SUPER + SHIFT + ALT + TAB",
+    kbWindowGroupCycleNext     = "ALT + TAB",
+    kbWindowGroupCyclePrev     = "SHIFT + ALT + TAB",
     kbUngroup                  = "SUPER + U",
-    kbToggleGroup              = "SUPER + Comma",
+    kbToggleGroup              = "SUPER + W",
     kbGroupLockActive          = "SUPER + SHIFT + Comma",
+    kbMoveToGroupLeft          = "SUPER + SHIFT + Left",
+    kbMoveToGroupRight         = "SUPER + SHIFT + Right",
 
     -- Window Actions
     kbWindowDecreaseWidth      = { "SUPER + Minus", "SUPER + ALT + Left" },
@@ -99,7 +101,7 @@ return {
     kbPinWindow                = "SUPER + P",
     kbWindowFullscreen         = "SUPER + F",
     kbWindowBorderedFullscreen = "SUPER + ALT + F",
-    kbToggleWindowFloating     = "SUPER + ALT + Space",
+    kbToggleWindowFloating     = "SUPER + SHIFT + Space",
     kbCloseWindow              = "SUPER + Q",
 
     -- Special workspaces toggles
@@ -110,8 +112,7 @@ return {
     kbTodoWs                   = "SUPER + R",
 
     -- Apps
-    kbTerminal                 = "SUPER + T",
-    kbBrowser                  = "SUPER + W",
+    kbTerminal                 = "SUPER + Return",
     kbEditor                   = "SUPER + C",
     kbFileExplorer             = "SUPER + E",
     kbAudioSettings            = "CTRL + ALT + V",
