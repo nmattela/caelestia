@@ -25,6 +25,12 @@ hl.on("hyprland.start", function()
     -- Forward bluetooth media commands to MPRIS
     hl.exec_cmd("mpris-proxy")
 
+    -- Custom applications to launch on startup
+    hl.exec_cmd("nextcloud --background")
+    hl.exec_cmd("fcitx5 -d -r")
+    hl.exec_cmd("fcitx5-remote -r")
+    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+
     -- Start shell
     hl.exec_cmd("caelestia shell -d")
 end)

@@ -139,12 +139,9 @@ tagged_rule(music_player_tag, {
     "Cider",                                                       -- Apple music
     "com.github.th-ch.youtube-music|com-maxrave-simpmusic-MainKt", -- YouTube music
 })
-tagged_rule(music_player_tag, {
-    "Spotify|Spotify Free" -- Spotify wayland, it has no class for some reason
-}, "initial_title")
 tagged_rule(communication_app_tag, {
-    "discord|equibop|vesktop", -- Discord clients
-    "whatsapp"                 -- Whatsapp
+    "equibop|vesktop", -- Discord clients
+    "whatsapp"         -- Whatsapp
 }, "class")
 tagged_rule(todo_app_tag, {
     "todoist" -- Todoist

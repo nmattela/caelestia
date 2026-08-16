@@ -106,6 +106,12 @@ create_bind(vars.kbUngroup, hl.dsp.window.move({ out_of_group = true }))
 create_bind(vars.kbGroupLockActive, hl.dsp.group.lock_active())
 create_bind(vars.kbMoveToGroupLeft, hl.dsp.window.move({ direction = "left", group_aware = true }))
 create_bind(vars.kbMoveToGroupRight, hl.dsp.window.move({ direction = "right", group_aware = true }))
+for i = 1, 10 do
+    local key = i % 10 -- 10 maps to key 0
+
+    hl.bind("SUPER" .. " + " .. key,             hl.dsp.focus({ workspace = i }))
+    hl.bind("SUPER" .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
+end
 
 -- Window actions
 for _, dir in ipairs({ "left", "right", "up", "down" }) do

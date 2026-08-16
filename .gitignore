@@ -11,7 +11,7 @@
 /fish/conf.d/
 /fish/fish-kubectl-completions
 
-/hypr/hyprland/monitors.conf
-/hypr/hyprland/nvidia.conf
+/hypr/hyprland/monitors.lua
+/hypr/hyprland/nvidia.lua
 
 .SRCINFO
