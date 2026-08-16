@@ -104,6 +104,8 @@ create_bind(vars.kbWindowGroupCyclePrev, hl.dsp.group.prev(), repeating)
 create_bind(vars.kbToggleGroup, hl.dsp.group.toggle())
 create_bind(vars.kbUngroup, hl.dsp.window.move({ out_of_group = true }))
 create_bind(vars.kbGroupLockActive, hl.dsp.group.lock_active())
+create_bind(vars.kbMoveToGroupLeft, hl.dsp.window.move({ direction = "left", group_aware = true }))
+create_bind(vars.kbMoveToGroupRight, hl.dsp.window.move({ direction = "right", group_aware = true }))
 
 -- Window actions
 for _, dir in ipairs({ "left", "right", "up", "down" }) do
@@ -150,7 +152,6 @@ create_bind(vars.kbTodoWs, fn.toggle("todo"))
 
 -- Apps
 create_bind(vars.kbTerminal, hl.dsp.exec_cmd(vars.terminal))
-create_bind(vars.kbBrowser, hl.dsp.exec_cmd(vars.browser))
 create_bind(vars.kbEditor, hl.dsp.exec_cmd(vars.editor))
 create_bind(vars.kbFileExplorer, hl.dsp.exec_cmd(vars.fileExplorer))
 create_bind(vars.kbAudioSettings, hl.dsp.exec_cmd(vars.audioSettings))
