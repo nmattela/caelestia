@@ -102,7 +102,7 @@ return {
     kbWindowFullscreen         = "SUPER + F",
     kbWindowBorderedFullscreen = "SUPER + ALT + F",
     kbToggleWindowFloating     = "SUPER + SHIFT + Space",
-    kbCloseWindow              = "SUPER + Q",
+    kbCloseWindow              = "SUPER + SHIFT + Q",
 
     -- Special workspaces toggles
     kbSpecialWs                = "SUPER + S",
