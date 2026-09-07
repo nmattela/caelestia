@@ -97,8 +97,8 @@ create_bind(vars.kbMoveWinToWsSpecial, hl.dsp.window.move({ workspace = "special
 create_bind(vars.kbMoveWinFromWsSpecial, hl.dsp.window.move({ workspace = "e+0" }))
 
 -- Window groups
-create_bind(vars.kbWindowCycleNext, hl.dsp.window.cycle_next(), repeating)
-create_bind(vars.kbWindowCyclePrev, hl.dsp.window.cycle_next({ next = false }), repeating)
+-- create_bind(vars.kbWindowCycleNext, hl.dsp.window.cycle_next(), repeating)
+-- create_bind(vars.kbWindowCyclePrev, hl.dsp.window.cycle_next({ next = false }), repeating)
 create_bind(vars.kbWindowGroupCycleNext, hl.dsp.group.next(), repeating)
 create_bind(vars.kbWindowGroupCyclePrev, hl.dsp.group.prev(), repeating)
 create_bind(vars.kbToggleGroup, hl.dsp.group.toggle())
@@ -163,7 +163,7 @@ create_bind(vars.kbFileExplorer, hl.dsp.exec_cmd(vars.fileExplorer))
 create_bind(vars.kbAudioSettings, hl.dsp.exec_cmd(vars.audioSettings))
 
 -- Utilities
-create_bind(vars.kbScreenshot, hl.dsp.exec_cmd("caelestia screenshot"), locked)
+create_bind(vars.kbScreenshot, hl.dsp.exec_cmd("caelestia screenshot --region"), locked)
 create_bind(vars.kbScreenshotFreeze, hl.dsp.global("caelestia:screenshotFreeze"))
 create_bind(vars.kbScreenshotRegion, hl.dsp.global("caelestia:screenshot"))
 create_bind(vars.kbRecord, hl.dsp.exec_cmd("caelestia record"))

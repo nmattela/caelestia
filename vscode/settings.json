@@ -56,5 +56,17 @@
             "name": "Qt-5.15.18-linux-g++_from_PATH",
             "path": "/usr/bin/qtpaths"
         }
+    ],
+    "yaml.disableSchemaDetection": [
+        "**/docker-compose.yml",
+        "**/docker-compose.yaml",
+        "**/docker-compose.*.yml",
+        "**/docker-compose.*.yaml",
+        "**/compose.yml",
+        "**/compose.yaml",
+        "**/compose.*.yml",
+        "**/compose.*.yaml",
+        "azure-pipelines.yml",
+        "azure-pipelines.yaml"
     ]
 }
